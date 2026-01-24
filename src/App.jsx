@@ -132,7 +132,7 @@ function App() {
           <>
             <HeroSection />
             <div className="container" style={{ padding: 'var(--space-lg) var(--space-md)', textAlign: 'center' }}>
-              <h4 className="text-gold" style={{ fontSize: '0.9rem', letterSpacing: '3px', textTransform: 'uppercase' }}>Introduction</h4>
+              <h4 className="text-gold" style={{ fontSize: '1rem', letterSpacing: '3px', textTransform: 'uppercase' }}>Introduction</h4>
               <h2 style={{ marginBottom: '1.5rem' }}>The Art of Beauty</h2>
               <p style={{ maxWidth: '650px', margin: '0 auto', fontSize: 'var(--font-body)' }}>
                 Specializing in HD Bridal Makeup, Reception Looks, and Editorial Styling.

@@ -6,15 +6,17 @@ export default function BeforeAfterSlider() {
   // STABLE PEXELS IMAGES (Ensure they align well)
   // Ideally, the artist provides perfectly aligned photos. 
   // These mockups demonstrate the effect.
-  const beforeImage = "https://images.pexels.com/photos/2661256/pexels-photo-2661256.jpeg?auto=compress&cs=tinysrgb&w=800"; // No makeup / Natural
-  const afterImage = "https://images.pexels.com/photos/2661255/pexels-photo-2661255.jpeg?auto=compress&cs=tinysrgb&w=800";  // Full glam
+  //const beforeImage = "https://images.pexels.com/photos/2661256/pexels-photo-2661256.jpeg?auto=compress&cs=tinysrgb&w=800"; // No makeup / Natural
+  //const afterImage = "https://images.pexels.com/photos/2661255/pexels-photo-2661255.jpeg?auto=compress&cs=tinysrgb&w=800";  // Full glam
 
+  const beforeImage = '/slider_before_c.png';
+  const afterImage = '/slider_after_c.png';
   return (
     <div className="container" style={{ padding: 'var(--space-lg) var(--space-md)' }}>
       
       {/* SECTION HEADER */}
       <div className="text-center mb-5">
-        <h4 className="text-gold" style={{ fontSize: '0.9rem', letterSpacing: '3px', textTransform: 'uppercase' }}>The Transformation</h4>
+        <h4 className="text-gold" style={{ fontSize: '1rem', letterSpacing: '3px', textTransform: 'uppercase' }}>The Transformation</h4>
         <h2 style={{ fontSize: 'var(--font-h2)' }}>See the Difference</h2>
         <div style={{ width: '60px', height: '2px', background: 'var(--gold)', margin: '1rem auto' }}></div>
       </div>
@@ -31,7 +33,7 @@ export default function BeforeAfterSlider() {
           handle={
             <div style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
               {/* The vertical line */}
-              <div style={{ width: '2px', height: '100%', background: 'white', position: 'absolute' }}></div>
+              <div style={{ width: '1px', height: '100%', background: 'white', position: 'absolute' }}></div>
               {/* The central jewel button */}
               <div style={{ 
                 width: '50px', height: '50px', borderRadius: '50%', 

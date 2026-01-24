@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check, Star, Sparkles } from 'lucide-react';
+import { Check, Star, Sparkles, Mars } from 'lucide-react';
 
+const config = {
+    whatsappNumber: +919952845382
+}
 // --- DATA: THE MENU ---
 const BRIDAL_PACKAGES = [
     {
@@ -42,8 +45,8 @@ export default function Packages() {
         <div className="container" style={{ padding: 'var(--space-lg) var(--space-md)' }}>
 
             {/* HEADER */}
-            <div className="text-center mb-5">
-                <h4 className="text-gold" style={{ fontSize: '0.9rem', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: '800' }}>GLOWY Investment</h4>
+            <div className="text-center mb-5" style={{marginTop:'3%'}}>
+                <h4 className="text-gold" style={{ fontSize: '1rem', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: '800' }}>GLOWY Investment</h4>
                 <h2 style={{ fontSize: 'var(--font-h2)' }}>Bridal Packages</h2>
                 <p style={{ maxWidth: '600px', margin: '0 auto' }}>
                     Curated experiences for your special day. All packages include a consultation and premium international products (MAC, Huda, Bobbi Brown).
@@ -119,7 +122,7 @@ export default function Packages() {
                                 // Defines the message: "Hi! I am interested in [Package Name]..."
                                 const text = `Hi! I am interested in the ${pkg.title} package (${pkg.price}). Is my date available?`;
                                 // Opens WhatsApp immediately
-                                window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+                                window.open(`https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
                             }}
                         >
                             Check Availability

@@ -73,6 +73,7 @@ export default function LookBook() {
     const categories = ['All', 'Bridal', 'Party', 'Editorial'];
 
     return (
+        
         <div className="container" style={{ padding: '4rem 2rem' }}>
 
             {/* SECTION HEADER */}

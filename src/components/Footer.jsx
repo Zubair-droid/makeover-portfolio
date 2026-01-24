@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <div style={{ fontSize: '1.8rem', fontFamily: 'Playfair Display', fontWeight: 700, marginBottom: '1rem' }}>
               {/* Haseen's  */}
-              <img src="/public/logo.jpg"  width={'76px'} height={'76px'} style=
+              <img src="/logo.jpg"  width={'76px'} height={'76px'} style=
     {{borderRadius: '38px'}}/>
               <span className="text-gold">.</span>
             </div>
