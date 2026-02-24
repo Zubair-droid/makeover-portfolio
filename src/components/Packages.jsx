@@ -45,12 +45,14 @@ export default function Packages() {
         <div className="container" style={{ padding: 'var(--space-lg) var(--space-md)' }}>
 
             {/* HEADER */}
-            <div className="text-center mb-5" style={{marginTop:'3%'}}>
-                <h4 className="text-gold" style={{ fontSize: '1rem', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: '800' }}>GLOWY Investment</h4>
+            <div className="text-center mb-5" style={{ marginTop: '3%', display: 'grid', justifyContent:'center' }}>
+                <h4 className="text-gold" style={{ fontSize: '1.5rem', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: '800' }}>GLOWY Investment</h4>
                 <h2 style={{ fontSize: 'var(--font-h2)' }}>Bridal Packages</h2>
-                <p style={{ maxWidth: '600px', margin: '0 auto' }}>
-                    Curated experiences for your special day. All packages include a consultation and premium international products (MAC, Huda, Bobbi Brown).
+                <p style={{ maxWidth: '620px', margin: '0 auto' }}>
+                    Curated experiences for your special day. All packages include a personalized consultation on skin types and premium international products (MAC, Huda, Bobbi Brown).
                 </p>
+
+                
             </div>
 
             {/* PRICING CARDS GRID */}
@@ -130,6 +132,19 @@ export default function Packages() {
                     </motion.div>
                 ))}
             </div>
+
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '15px'}}>
+
+                <p style={{
+                    
+                    color: 'var(--gold)', background: 'white',
+                    padding: '8px', fontSize: '0.95rem', 
+                    borderRadius: '20px',
+                    fontFamily: 'Playfair Display',
+                                   }}> 
+                 Complimentary <i style={{color: '#738957', fontWeight: 'bold'}}>Mehandi</i> services included on all our services for your special occasions 💝
+                </p>
+                </div>
 
             {/* A LA CARTE MENU */}
             <div className="text-center mb-4">

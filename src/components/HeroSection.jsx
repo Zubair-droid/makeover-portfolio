@@ -37,7 +37,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div style={{ height: '95vh', position: 'relative', overflow: 'hidden', backgroundColor: 'black' }}>
+    <div style={{ height: '100vh', position: 'relative', overflow: 'hidden', backgroundColor: 'black' }}>
       
       {/* BACKGROUND VIDEO */}
       <video
@@ -162,6 +162,11 @@ export default function HeroSection() {
                  Book Consultation
               </motion.button>
             </Link>
+
+            {/* BUTTON 3: HOVER EFFECT ADDED */}
+            
+
+
           </motion.div>
 
         </motion.div>

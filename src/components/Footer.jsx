@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             <p style={{ color: '#999', fontSize: '0.9rem', lineHeight: '1.8', maxWidth: '300px' }}>
               Enhancing natural radiance for brides across the globe. 
-              Based in Salem, available worldwide.
+              Based in Salem. Available worldwide.
             </p>
             <div className="d-flex gap-3 mt-3" style={{width:'150px', justifyContent: 'space-between'}}>
               <SocialIcon icon={<Instagram size={20} />} />

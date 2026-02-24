@@ -7,6 +7,7 @@ import { motion, AnimatePresence, correctBorderRadius } from 'framer-motion';
 import HeroSection from './components/HeroSection';
 import LookBook from './components/LookBook';
 import Packages from './components/Packages';
+import Achievements from './components/Achievements';
 import Footer from './components/Footer';
 import BeforeAfterSlider from './components/BeforeAfterSlider';
 
@@ -49,7 +50,7 @@ function Navbar() {
             <div style={{ fontSize: '1.5rem', fontFamily: 'Playfair Display', fontWeight: 700 }}>
               Haseen's
               
-               <span className="text-gold">.</span>
+               <span className="text-gold" style={{fontWeight: 'bold'}}>.</span>
             </div>
           </Link>
 
@@ -58,6 +59,8 @@ function Navbar() {
             <NavLink to="/" label="Home" />
             <NavLink to="/portfolio" label="Portfolio" />
             <NavLink to="/packages" label="Bridal Packages" />
+            <NavLink to="/achievements" label="Recognitions" />
+           
             <div style={{ width: '1px', height: '20px', background: 'currentColor', opacity: 0.3 }}></div>
             <Instagram size={20} style={{ cursor: 'pointer' }} />
             <Mail size={20} style={{ cursor: 'pointer' }} />
@@ -90,6 +93,7 @@ function Navbar() {
             <MobileLink to="/" label="Home" onClick={() => setIsOpen(false)} />
             <MobileLink to="/portfolio" label="Portfolio" onClick={() => setIsOpen(false)} />
             <MobileLink to="/packages" label="Bridal Packages" onClick={() => setIsOpen(false)} />
+            <MobileLink to="/achievements" label="Recognitions" onClick={() => setIsOpen(false)} />
 
             <div className="d-flex gap-4 mt-4 text-gold">
               <Instagram size={32} />
@@ -139,7 +143,7 @@ function App() {
                 We believe that every bride deserves to look like the best version of herself.
               </p>
               <div style={{ marginTop: '2rem' }}>
-                <Link to="/portfolio" className="btn-outline">See My Work</Link>
+                <Link to="/portfolio" className="btn-outline">See Our Work</Link>
               </div>
             </div>
 
@@ -158,6 +162,7 @@ function App() {
         } />
         <Route path="/portfolio" element={<LookBook />} />
         <Route path="/packages" element={<Packages />} />
+        <Route path="achievements" element={<Achievements />}/>
       </Routes>
       <Footer />
     </Router>

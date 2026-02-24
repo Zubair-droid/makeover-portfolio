@@ -36,19 +36,44 @@ const MOCK_IMAGES = [
     title: 'Reception Glam' 
   },
   { 
+    id: 7, 
+    // Bridal Mehandi / Haldi
+    url: 'https://i.pinimg.com/736x/24/95/4f/24954fbe7704d3ed21a4bb97e588e22f.jpg?auto=compress&cs=tinysrgb&w=600', 
+    category: 'Mehandi', 
+    title: 'Reception' 
+  },
+  { 
     id: 5, 
     // Modern Art / Creative Makeup
-    url: 'https://instasize.com/api/image/57ed0eb669b620d83add5792919790489e415474f4c4db3791eb8030bdef2b0d.jpeg', 
+     url: 'https://image2url.com/r2/default/images/1771393251923-04ab9b3d-bff9-49aa-9113-eab7a4f35e06.jpeg',
+     //'https://instasize.com/api/image/57ed0eb669b620d83add5792919790489e415474f4c4db3791eb8030bdef2b0d.jpeg', 
     category: 'Editorial', 
-    title: 'Modern Art' 
+    title: 'Western Galm' 
+  },
+  { 
+    id: 8, 
+    // Party Night / Festival
+    url: 'https://i.pinimg.com/1200x/40/92/48/409248bff380247e2fde5043214ffc03.jpg?auto=compress&cs=tinysrgb&w=600', 
+    category: 'Mehandi', 
+    title: 'Muhurtham' 
   },
   { 
     id: 6, 
     // Party Night / Cocktail Look
-    url: 'https://images.pexels.com/photos/1926620/pexels-photo-1926620.jpeg?auto=compress&cs=tinysrgb&w=600', 
+    url: 'https://i.pinimg.com/736x/e8/a9/40/e8a9408f26b65add7a9638d2855e5386.jpg?auto=compress&cs=tinysrgb&w=600',
+    // https://images.pexels.com/photos/1926620/pexels-photo-1926620.jpeg?auto=compress&cs=tinysrgb&w=600 
     category: 'Party', 
     title: 'Cocktail Night' 
   },
+
+  { 
+    id: 9, 
+    // Bridal Mehandi / Reception
+    url: 'https://i.pinimg.com/1200x/77/d4/1e/77d41e532218a7c0ab26a3d7efa28326.jpg?auto=compress&cs=tinysrgb&w=600', 
+    category: 'Mehandi', 
+    title: 'Haldi Ceremony' 
+  }
+
 ];
 
 
@@ -70,7 +95,7 @@ export default function LookBook() {
     }, [filter]);
 
     // CATEGORY BUTTONS
-    const categories = ['All', 'Bridal', 'Party', 'Editorial'];
+    const categories = ['All', 'Bridal', 'Party', 'Editorial', 'Mehandi'];
 
     return (
         
@@ -79,12 +104,12 @@ export default function LookBook() {
             {/* SECTION HEADER */}
             <div className="text-center mb-5">
                 <h4 className="text-gold" style={{ fontSize: '0.9rem', letterSpacing: '3px', textTransform: 'uppercase' }}>Portfolio</h4>
-                <h2 style={{ fontSize: '2.5rem' }}>The Look Book</h2>
+                <h2 style={{ fontSize: 'var(--font-h2)', textAlign: 'center' }}>The Look Book</h2>
                 <div style={{ width: '60px', height: '2px', background: 'var(--gold)', margin: '1rem auto' }}></div>
             </div>
 
             {/* FILTER TABS */}
-            <div className="d-flex justify-content-center gap-4 mb-5 flex-wrap">
+            <div className="d-flex justify-content-center gap-2 mb-5 flex-wrap">
                 {categories.map(cat => (
                     <button
                         key={cat}
