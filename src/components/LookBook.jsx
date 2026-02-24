@@ -48,7 +48,7 @@ const MOCK_IMAGES = [
      url: 'https://image2url.com/r2/default/images/1771393251923-04ab9b3d-bff9-49aa-9113-eab7a4f35e06.jpeg',
      //'https://instasize.com/api/image/57ed0eb669b620d83add5792919790489e415474f4c4db3791eb8030bdef2b0d.jpeg', 
     category: 'Editorial', 
-    title: 'Western Galm' 
+    title: 'Western Glam' 
   },
   { 
     id: 8, 
