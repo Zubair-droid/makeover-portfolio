@@ -42,11 +42,11 @@ const EXTRAS = [
 
 export default function Packages() {
     return (
-        <div className="container" style={{ padding: 'var(--space-lg) var(--space-md)' }}>
+        <div className="container" style={{ paddingTop: '6rem', paddingBottom: '2rem' }}>
 
             {/* HEADER */}
-            <div className="text-center mb-5" style={{ marginTop: '3%', display: 'grid', justifyContent:'center' }}>
-                <h4 className="text-gold" style={{ fontSize: '1.5rem', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: '800' }}>GLOWY Investment</h4>
+            <div className="text-center mb-5" style={{ display: 'grid', justifyContent:'center' }}>
+                <h4 className="text-gold" style={{ fontSize: '1.5rem', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: '800' }}></h4>
                 <h2 style={{ fontSize: 'var(--font-h2)' }}>Bridal Packages</h2>
                 <p style={{ maxWidth: '620px', margin: '0 auto' }}>
                     Curated experiences for your special day. All packages include a personalized consultation on skin types and premium international products (MAC, Huda, Bobbi Brown).
