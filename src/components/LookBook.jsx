@@ -14,12 +14,13 @@ const MOCK_IMAGES = [
     
   },
   { 
-    id: 2, 
-    // High Fashion / Golden Hour Look
-    url: 'https://i.pinimg.com/1200x/9c/15/1b/9c151b96ca094fc05c52af392bf84566.jpg?auto=compress&w=600', 
-    category: 'Editorial', 
-    title: 'Golden Hour' 
+    id: 7, 
+    // Bridal Mehandi / Haldi
+    url: 'https://i.pinimg.com/736x/24/95/4f/24954fbe7704d3ed21a4bb97e588e22f.jpg?auto=compress&cs=tinysrgb&w=600', 
+    category: 'Mehandi', 
+    title: 'Reception' 
   },
+  
   { 
     id: 3, 
     // Indian Bride in Red Saree (Stable Pexels Link)
@@ -36,13 +37,6 @@ const MOCK_IMAGES = [
     title: 'Reception Glam' 
   },
   { 
-    id: 7, 
-    // Bridal Mehandi / Haldi
-    url: 'https://i.pinimg.com/736x/24/95/4f/24954fbe7704d3ed21a4bb97e588e22f.jpg?auto=compress&cs=tinysrgb&w=600', 
-    category: 'Mehandi', 
-    title: 'Reception' 
-  },
-  { 
     id: 5, 
     // Modern Art / Creative Makeup
      url: 'https://image2url.com/r2/default/images/1771393251923-04ab9b3d-bff9-49aa-9113-eab7a4f35e06.jpeg',
@@ -50,6 +44,15 @@ const MOCK_IMAGES = [
     category: 'Editorial', 
     title: 'Western Glam' 
   },
+
+  { 
+    id: 2, 
+    // High Fashion / Golden Hour Look
+    url: 'https://i.pinimg.com/1200x/9c/15/1b/9c151b96ca094fc05c52af392bf84566.jpg?auto=compress&w=600', 
+    category: 'Editorial', 
+    title: 'Golden Hour' 
+  },
+  
   { 
     id: 8, 
     // Party Night / Festival
